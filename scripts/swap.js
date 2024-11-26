@@ -6,8 +6,8 @@ async function main() {
     // Addresses for tokens and router
     const tokenAAddress = "0x5eB72e475aAf2af3F486aB87DA63EAc6142E65B6";
     const tokenBAddress = "0x10625428CA0D471492A449f2Ee0E743420ae2186";
-    const routerAddress = "0xYourRouterAddress"; // Replace with Aerodrome router address
-    const factoryAddress = "0xYourFactoryAddress"; // Replace with the factory address used in Route
+    const routerAddress = "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43"; 
+    const factoryAddress = "0x420DD381b31aEf6683db6B902084cB0FFECe40Da";
 
     // Router ABI for `swapExactTokensForTokens`
     const routerABI = [

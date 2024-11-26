@@ -4,9 +4,9 @@ async function main() {
     const [deployer] = await ethers.getSigners();
 
     // Addresses for token A, token B, and Aerodrome Factory
-    const tokenAAddress = "0x5eB72e475aAf2af3F486aB87DA63EAc6142E65B6";
-    const tokenBAddress = "0x10625428CA0D471492A449f2Ee0E743420ae2186";
-    const aerodromeFactoryAddress = "0xYourAerodromeFactoryAddress"; // Replace with the actual factory address
+    const tokenAAddress = "0x";
+    const tokenBAddress = "0x";
+    const aerodromeFactoryAddress = "0x420DD381b31aEf6683db6B902084cB0FFECe40Da"; 
 
     // Aerodrome Factory ABI (compatible with Uniswap's Factory)
     const aerodromeFactoryABI = [
