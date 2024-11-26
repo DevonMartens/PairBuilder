@@ -9,7 +9,7 @@ require("hardhat-contract-sizer");
 require("solidity-docgen");
 require("dotenv").config();
 
-const { DEPLOYER_PRIVATE_KEY, TESTNET_RPC_URL, ETHERSCAN_API_KEY } = process.env;
+const { DEPLOYER_PRIVATE_KEY, ETH_TESTNET_RPC_URL, ETHERSCAN_API_KEY, BASE_TESTNET_RPC_URL, BASE_RPC_URL } = process.env;
 
 module.exports = {
   docgen: {},
@@ -20,8 +20,18 @@ module.exports = {
       },
     },
     testnet: { // Correct placement as a sibling to the 'hardhat' network configuration
-      url: 'https://sepolia.infura.io/v3/APIKEY',
+      url: 'ETH_TESTNET_RPC_URL',
       accounts: [`0x${'YOUR PRIVATE KEY'}`],
+    },
+    baseSepolia: {
+      url: 'BASE_TESTNET_RPC_URL',
+      accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
+      chainId: 84531, // Base Sepolia Chain ID
+    },
+    baseMainnet: {
+      url: 'BASE_RPC_URL',
+      accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
+      chainId: 8453, // Base Mainnet Chain ID
     },
   },
   etherscan: {
