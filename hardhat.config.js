@@ -19,23 +19,23 @@ module.exports = {
         blockGasLimit: 100000000,
       },
     },
-    testnet: { // Correct placement as a sibling to the 'hardhat' network configuration
-      url: 'ETH_TESTNET_RPC_URL',
-      accounts: [`0x${'YOUR PRIVATE KEY'}`],
+    testnet: { // Corrected
+      url: ETH_TESTNET_RPC_URL, // Use the variable directly
+      accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
     },
-    baseSepolia: {
-      url: 'BASE_TESTNET_RPC_URL',
+    baseSepolia: { // Corrected
+      url: BASE_TESTNET_RPC_URL, // Use the variable directly
       accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
       chainId: 84531, // Base Sepolia Chain ID
     },
-    baseMainnet: {
-      url: 'BASE_RPC_URL',
+    baseMainnet: { // Corrected
+      url: BASE_RPC_URL, // Use the variable directly
       accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
       chainId: 8453, // Base Mainnet Chain ID
     },
   },
   etherscan: {
-    apiKey: 'APIKEY',
+    apiKey: ETHERSCAN_API_KEY, // Use the variable directly
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
