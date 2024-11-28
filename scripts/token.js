@@ -7,7 +7,7 @@ async function main() {
     const tokenSymbol = "MTK2";
 
     // The wallet address that will receive half of the token supply.
-    // Replace '0xYOUR_WALLET_ADDRESS_HERE' with an actual Ethereum address.
+    // Replace with an actual BASE address.
     const walletAddress = "0x8cfdF539DDf72A1DDD011f141b29ceC85f511b88";
 
     // Deploying the MyToken contract
